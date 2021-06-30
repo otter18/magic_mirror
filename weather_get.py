@@ -3,7 +3,7 @@ def info():
     import requests
     s_city = "Moscow,RU"
     city_id = 524901
-    appid = "3957babd7a920cb791cdc4f3fdaf1a2f"
+    appid = "-"
     res = requests.get("http://api.openweathermap.org/data/2.5/find",
                  params={'q': s_city, 'type': 'like', 'units': 'metric', 'APPID': appid})
     data = res.json()
@@ -17,7 +17,7 @@ def info():
 def current_weather():
     import requests
     city_id = 524901
-    appid = "3957babd7a920cb791cdc4f3fdaf1a2f"
+    appid = "-"
     res = requests.get("http://api.openweathermap.org/data/2.5/weather",
                  params={'id': city_id, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
     current_weather = res.json()
@@ -28,7 +28,7 @@ def current_weather():
 def forecast():
     import requests
     city_id = 524901
-    appid = "3957babd7a920cb791cdc4f3fdaf1a2f"
+    appid = "-"
     res = requests.get("http://api.openweathermap.org/data/2.5/forecast",
                        params={'id': city_id, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
     forecast = res.json()
