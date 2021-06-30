@@ -1,6 +1,6 @@
 import smtplib
 def mail(receiver, subject, msg):  
-    sender = "Chernykh Vladimir"
+    sender = "otter18"
     
     message = 'From: {}\nTo: {}\nSubject: {}\n\n{}'.format(sender,
                                                            receiver,
